@@ -154,7 +154,7 @@ static int aoc_audio_control(const char *cmd_channel, const uint8_t *cmd,
 	struct timespec64 tv0, tv1;
 	int err, count;
 	unsigned long time_expired;
-	int in_pcm_trigger_callback;
+	int __maybe_unused in_pcm_trigger_callback;
 
 	if (!cmd_channel || !cmd)
 		return -EINVAL;

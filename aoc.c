@@ -880,7 +880,7 @@ phys_addr_t aoc_service_ring_base_phys_addr(struct aoc_service_dev *dev, aoc_dir
 	struct aoc_prvdata *prvdata;
 	aoc_service *service;
 	void *ring_base;
-	int service_number;
+	int __maybe_unused service_number;
 
 	if (!dev)
 		return -EINVAL;

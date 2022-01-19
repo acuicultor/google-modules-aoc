@@ -83,7 +83,7 @@ static const struct aoc_superbin_header *superbin_header(const struct firmware* 
 bool _aoc_fw_is_valid(const struct firmware *fw)
 {
 	const struct aoc_superbin_header *header;
-	u32 ipc_offset, bootloader_offset;
+	u32 __maybe_unused ipc_offset, bootloader_offset;
 	u32 uuid_offset, uuid_size;
 
 	if (!fw || !fw->data)
